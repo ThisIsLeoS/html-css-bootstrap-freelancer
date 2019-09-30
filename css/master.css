@@ -14,7 +14,9 @@
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-
+.navbar > .container {
+  padding: 2%;
+}
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
