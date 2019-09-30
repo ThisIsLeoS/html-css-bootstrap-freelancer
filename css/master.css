@@ -15,6 +15,14 @@
 
 /* rules used in specific parts of the page */
 .navbar > .container {
+  height: 70px;
+}
+
+.navbar > .container > .navbar-brand {
+  line-height: 70px;
+}
+
+.navbar > .container {
   padding: 2%;
 }
 /* /rules used in specific parts of the page */
