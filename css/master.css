@@ -1,33 +1,36 @@
 /* reset rules */
 
-  /* not working, not sure why */
+  /* note: universal selector doesn't seem to work on bootstrap's elements */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-  .navbar,
-  .navbar ul {
-    margin-bottom: 0;
-  }
-
   li {
+
     /* overwriting browser's style */
     list-style-type: none;
   }
 
   a {
+
     /* overwriting browser's style */
-
-    /* not working for links in the navbar's list of links, not sure why */
     text-decoration: none;
-
     color: black;
   }
 /* /reset rules */
 
 /* rules used (or usable) in different parts of the page */
+
+  /* to center this box both vertically and horizontally in its parent */
+  .centered-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #lines-and-star-container {
     margin: 30px 0;
   }
@@ -58,7 +61,6 @@
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-
   body {
     font-family: 'Montserrat', sans-serif;
   }
@@ -66,6 +68,7 @@
   /* navbar */
   .navbar {
     background-color: rgb(44, 62, 80); /* not working, not sure why */
+    margin-bottom: 0;
   }
 
   .navbar-brand {
@@ -80,6 +83,10 @@
     background-color: rgb(26, 188, 156); /* not working, not sure why */
   }
 
+  .navbar .link-list-col ul {
+    margin-bottom: 0;
+  }
+
   .navbar .link-list-col li {
     display: inline-block;
     margin-right: 20px;
@@ -91,7 +98,7 @@
     line-height: 61.6px;
 
     font-weight: bold;
-    font-size: 25px;
+    font-size: 16px;
   }
   /* /navbar */
 
@@ -106,7 +113,7 @@
   }
 
   header #boy-avatar-img {
-    width: 240px;
+    max-width: 240px;
     height: 254px;
   }
 
@@ -120,12 +127,26 @@
   /* /header */
 
   /* main - 1st row */
-  #main-1st-row {
+  #portfolio-section {
     text-align: center;
   }
 
-  #main-1st-row .tile-img {
-    margin-top: 30px;
+  .tile-box {
+    position: relative;
+
+    /* to make the "text-align: center;" rule apply to this element */
+    display: inline-block;
+
+    margin: 25px 0;
+    border-radius: 5px;
+  }
+
+  .tile-box .overlay-img {
+    opacity: 0;
+  }
+
+  .tile-box .overlay-img:hover {
+    opacity: 0.7;
   }
   /* /main - 1st row */
 
@@ -137,8 +158,10 @@
   /* rules used in specific parts of the page */
 
     /* main - 1st row */
-    #main-1st-row .tile-img {
-      width: 400px;
+    #portfolio-section .tile-box,
+    #portfolio-section .tile-box .tile-img,
+    #portfolio-section .tile-box .overlay-img {
+      max-width: 400px;
       height: 288px;
     }
     /* /main - 1st row */
@@ -167,6 +190,21 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* rules used in specific parts of the page */
+
+    /* main - 1st row */
+    #portfolio-section .tile-box,
+    #portfolio-section .tile-box .tile-img,
+    #portfolio-section .tile-box .overlay-img {
+      width: 330px;
+      height: 238px;
+    }
+    /* /main - 1st row */
+
+  /* rules used in specific parts of the page */
+}
+
 @media screen and (min-width: 992px) {
 
   /* rules used in specific parts of the page */
@@ -188,11 +226,13 @@
     /* /header */
 
     /* main - 1st - row */
-    #main-1st-row h2 {
+    #portfolio-section h2 {
       font-size: 35px;
     }
 
-    #main-1st-row .tile-img {
+    #portfolio-section .tile-box,
+    #portfolio-section .tile-box .tile-img,
+    #portfolio-section .tile-box .overlay-img {
       width: 289px;
       height: 209px;
     }
@@ -202,24 +242,13 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* rules used in specific parts of the page */
-
-    /* main - 1st row */
-    #main-1st-row .tile-img {
-      width: 330px;
-      height: 238px;
-    }
-    /* /main - 1st row */
-
-  /* rules used in specific parts of the page */
-}
-
 @media screen and (min-width: 1200px) {
   /* rules used in specific parts of the page */
 
     /* main - 1st row */
-    #main-1st-row .tile-img {
+    #portfolio-section .tile-box,
+    #portfolio-section .tile-box .tile-img,
+    #portfolio-section .tile-box .overlay-img {
       width: 349px;
       height: 252px;
     }
