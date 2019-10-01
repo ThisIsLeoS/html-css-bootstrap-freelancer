@@ -7,17 +7,18 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  <!-- bootstrap -->
+  <!-- /bootstrap -->
 
   <!-- fontawesome -->
   <link href="css/fontawesome-styles.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/master.css">
+
+  <!-- "montserrat" font  -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
   <title>Freelancer - Start Bootstrap Theme</title>
 </head>
@@ -25,30 +26,116 @@
   <div id="global-container" class="container-fluid">
 
     <!-- navbar -->
-    <section class="row navbar navbar-default navbar-fixed-top">
+    <section class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="row">
 
-        <div class="col-xs-5">
-          <a class="navbar-brand text-uppercase" href="#">start bootstrap</a>
+          <!-- navbar - brand -->
+          <div class="col-xs-6">
+            <a class="navbar-brand text-uppercase white-font" href="#">
+              <strong>start bootstrap</strong>
+            </a>
+          </div>
+          <!-- /navbar - brand -->
+
+          <!-- navbar - button -->
+          <div class="col-xs-6 text-right btn-col">
+            <button class="btn btn-default btn-lg navbar-btn text-uppercase white-font" type="button" name="button">
+              <strong>menu</strong>
+              <span class="glyphicon glyphicon-menu-hamburger glyphicon-hamburger"></span>
+            </button>
+          </div>
+          <!-- /navbar - button -->
+
+          <!-- navbar - link list -->
+          <div class="col-xs-6 text-right link-list-col">
+            <ul class="text-uppercase">
+              <li>
+                <a href="#">portfolio</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /navbar - link list -->
+
         </div>
-        <div class="col-xs-2 col-xs-offset-5">
-          <button class="btn btn-default btn-lg navbar-btn text-uppercase" type="button" name="button">menu</button>
-        <!-- <div class="col-xs-2">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-        </div> -->
+      </div>
 
     </section>
-    <!-- navbar -->
+    <!-- /navbar -->
 
     <!-- header -->
     <header>
-
+      <div class="container padding-100px-0">
+        <div class="row">
+          <div class="col-xs-12">
+            <img id="boy-avatar-img" src="img/avataaars.svg" alt="">
+            <h1>START BOOTSTRAP</h1>
+            <div id="lines-and-star-container">
+              <div class="horizontal-line"></div>
+              <i class="fas fa-star fa-2x"></i>
+              <div class="horizontal-line"></div>
+            </div>
+            <p>
+              Graphic Artist - Web Designer - Illustrator
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- /header -->
 
     <!-- main -->
     <main>
+
+      <!-- main - 1st row -->
+      <div id="main-1st-row" class="container padding-100px-0">
+        <div class="row">
+
+          <!-- main - 1st row - 1st col -->
+          <div class="col-xs-12">
+            <h2>PORTFOLIO</h2>
+            <div id="lines-and-star-container">
+              <div class="horizontal-line"></div>
+              <i class="fas fa-star fa-2x"></i>
+              <div class="horizontal-line"></div>
+            </div>
+          </div>
+          <!-- /main - 1st row - 1st col -->
+
+          <!-- main - 1st row - cols with tile -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img class="tile-img" src="img/cabin.png" alt="">
+          </div>
+          <!-- main - 1st row - cols with tile -->
+        </div>
+      </div>
+      <!-- /main - first row -->
 
     </main>
     <!-- /main -->

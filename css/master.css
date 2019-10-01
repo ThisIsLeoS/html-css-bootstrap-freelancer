@@ -1,32 +1,230 @@
+/* reset rules */
+
+  /* not working, not sure why */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar,
+  .navbar ul {
+    margin-bottom: 0;
+  }
+
+  li {
+    /* overwriting browser's style */
+    list-style-type: none;
+  }
+
+  a {
+    /* overwriting browser's style */
+
+    /* not working for links in the navbar's list of links, not sure why */
+    text-decoration: none;
+
+    color: black;
+  }
+/* /reset rules */
+
 /* rules used (or usable) in different parts of the page */
-
-  /* to center a box both vertically and horizontally in its parent */
-  .absolute-centering {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  #lines-and-star-container {
+    margin: 30px 0;
   }
 
-  .position-relative {
-    position: relative;
+  #lines-and-star-container > .horizontal-line {
+
+    /* to apply the width */
+    display: inline-block;
+
+    width: 112px;
+    border: 5px solid black;
+    border-radius: 5px;
+
+    /* to center it vertically with the star icon */
+    margin-bottom: 3px;
   }
+
+  .padding-100px-0 {
+    padding: 100px 0;
+  }
+
+  /* font colors */
+  .white-font {
+    color: white;
+  }
+  /* /font colors */
+
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-.navbar > .container {
-  height: 70px;
-}
 
-.navbar > .container > .navbar-brand {
-  line-height: 70px;
-}
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
 
-.navbar > .container {
-  padding: 2%;
-}
+  /* navbar */
+  .navbar {
+    background-color: rgb(44, 62, 80); /* not working, not sure why */
+  }
+
+  .navbar-brand {
+
+    /* to vertically center the brand inside the navbar */
+    padding: 0;
+    height: 61.6px;
+    line-height: 61.6px;
+  }
+
+  .navbar-btn {
+    background-color: rgb(26, 188, 156); /* not working, not sure why */
+  }
+
+  .navbar .link-list-col li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .navbar .link-list-col li a {
+
+    /* to vertically center inside the navbar */
+    line-height: 61.6px;
+
+    font-weight: bold;
+    font-size: 25px;
+  }
+  /* /navbar */
+
+  /* header */
+  header {
+
+    /* to not occupy the space of the fixed navbar */
+    margin-top: 62.4px;
+
+    background-color: rgb(26, 188, 156);
+    text-align: center;
+  }
+
+  header #boy-avatar-img {
+    width: 240px;
+    height: 254px;
+  }
+
+  header h1 {
+    margin-top: 50px;
+  }
+
+  header p {
+    font-weight: bold;
+  }
+  /* /header */
+
+  /* main - 1st row */
+  #main-1st-row {
+    text-align: center;
+  }
+
+  #main-1st-row .tile-img {
+    margin-top: 30px;
+  }
+  /* /main - 1st row */
+
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
+@media screen and (max-width: 768px) {
 
+  /* rules used in specific parts of the page */
+
+    /* main - 1st row */
+    #main-1st-row .tile-img {
+      width: 400px;
+      height: 288px;
+    }
+    /* /main - 1st row */
+
+  /* rules used in specific parts of the page */
+
+}
+
+@media screen and (max-width: 991px) {
+
+  /* rules used in specific parts of the page */
+
+    /* navbar */
+    .navbar .link-list-col {
+      display: none;
+    }
+    /* /navbar */
+
+    /* header */
+    header p {
+      font-size: 17px;
+    }
+    /* /header */
+
+  /* /rules used in specific parts of the page */
+
+}
+
+@media screen and (min-width: 992px) {
+
+  /* rules used in specific parts of the page */
+
+    /* navbar */
+      .navbar .btn-col {
+        display: none;
+      }
+    /* /navbar */
+
+    /* header */
+    header h1 {
+      font-size: 56px;
+    }
+
+    header p {
+      font-size: 21px;
+    }
+    /* /header */
+
+    /* main - 1st - row */
+    #main-1st-row h2 {
+      font-size: 35px;
+    }
+
+    #main-1st-row .tile-img {
+      width: 289px;
+      height: 209px;
+    }
+    /* /main - 1st - row */
+
+  /* /rules used in specific parts of the page */
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* rules used in specific parts of the page */
+
+    /* main - 1st row */
+    #main-1st-row .tile-img {
+      width: 330px;
+      height: 238px;
+    }
+    /* /main - 1st row */
+
+  /* rules used in specific parts of the page */
+}
+
+@media screen and (min-width: 1200px) {
+  /* rules used in specific parts of the page */
+
+    /* main - 1st row */
+    #main-1st-row .tile-img {
+      width: 349px;
+      height: 252px;
+    }
+    /* /main - 1st row */
+
+  /* rules used in specific parts of the page */
+}
 /* /rules for specific width ranges */
