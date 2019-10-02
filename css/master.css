@@ -48,8 +48,8 @@
     margin-bottom: 3px;
   }
 
-  .padding-100px-0 {
-    padding: 100px 0;
+  .padding-100px-15px {
+    padding: 100px 15px;
   }
 
   /* font colors */
@@ -67,7 +67,6 @@
 
   /* navbar */
   .navbar {
-    background-color: rgb(44, 62, 80); /* not working, not sure why */
     margin-bottom: 0;
   }
 
@@ -77,10 +76,6 @@
     padding: 0;
     height: 61.6px;
     line-height: 61.6px;
-  }
-
-  .navbar-btn {
-    background-color: rgb(26, 188, 156); /* not working, not sure why */
   }
 
   .navbar .link-list-col ul {
